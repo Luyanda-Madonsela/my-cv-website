@@ -1,0 +1,394 @@
+/*-----------------------------------------NAVIGATION--------------------------------------------*/
+.nav{
+    position: sticky ;
+    width: 100%;
+    height: 56px;   
+    background: linear-gradient(89.41deg, #ffffff 121.38%, rgba(125, 165, 201, 0.639325) 121.39%, rgba(217, 217, 217, 0) 124.68%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.contact, .career, .certs{
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'Handlee';
+    font-style: normal;
+}
+/*-----------------------------------------BODY LAYOUT--------------------------------------------*/
+.body{
+    width: 100%;
+    height: 2900px;
+    background: linear-gradient(180deg, #DBFFFF 61.46%, rgba(202, 211, 224, 0) 100%);
+    mix-blend-mode: normal;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;  
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+
+.pageSection1, .pageSection2, .pageSection3, .pageSection4 {
+width: 100%;
+height: 24%;
+background-repeat: no-repeat ;
+background-position: center;
+justify-items: center;
+justify-content: space-around;
+display: flex;
+flex-direction: row;
+}
+
+#Section1{
+    height: 23%;
+}
+
+.panel2, .panel3, .panel4 {
+    width: 83%;
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin-top:50px;
+}
+
+.panel2{
+    transform: rotate(1deg);
+}
+
+.panel3{
+    transform: rotate(-1deg);
+}
+.panel4{
+    transform: rotate(1deg);
+}
+
+.pin{
+    margin-top:10px;
+}
+
+/*-----------------------------------------FOOTER--------------------------------------------*/
+
+.footer{
+    width: 100%;
+    height: 204px;
+    background: linear-gradient(89.5deg, #A8F4AB 22.08%, rgba(125, 165, 201, 0.639325) 101.6%, rgba(217, 217, 217, 0) 104.72%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.footerTopSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 45%;
+    font-family: 'HeadlandOne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+}
+
+.footerGetInTouch, .footerDivideLine, .footerSupportMe{
+margin-top: 3%;
+padding:5px;
+}
+
+.footerDivideLine{
+    font-size: 30px;
+}
+
+.footerMiddleSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footerBottomSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:15px;
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+/*-----------------------------------------SECTION 1--------------------------------------------*/
+
+/*------------------------ABOUT PANEL--------------------------*/
+.panel1{
+    width: 83%;
+    height: 73%;
+    margin-top:55px;
+    background-image: url(./fadingRectangle.png);
+    background-repeat: no-repeat ;
+    background-position:top;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.aboutSection{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.aboutPanel{
+    width: 78%;
+    height: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin-top:60px;
+    transform: rotate(-2deg);
+
+}
+.aboutPin{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.aboutHeader1,.aboutHeader2{
+    width: 80%;
+    height: 10%;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 65px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.aboutHeader3{
+    width: 80%;
+    height: 10%;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-family: 'HeadlandOne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutPara{
+    width: 80%;
+    height: 50%;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: 'Handlee';
+    font-style: normal;
+    font-size: 18px;
+}
+
+/*------------------------PHOTO PANEL--------------------------*/
+
+.myPhoto{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position:static;
+}
+
+.photoPanel{
+    width: 60%;
+    height: 109%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top:-25px;
+    transform: rotate(-7.71deg);
+    
+}
+
+.photoPin{
+    width: 100%;
+    height: 8%;
+    margin-left: -8px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -30px;
+    
+}
+
+.insertPhoto{
+    width: 85%;
+    height: 90%;
+    margin-top: -9px;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    background-image: url(./IMG_20201108_131036.jpg);
+    background-repeat: no-repeat ;
+    background-position:center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.photo{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/*-----------------------------------------SECTION 2, 3 & 4--------------------------------------------*/
+
+.pin2, .pin3, .pin4{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:-10px;
+}
+
+.clickHere1{
+    text-decoration-line: underline;
+    color: rgb(47, 35, 211);
+}
+.clickHere2{
+    text-decoration-line: underline;
+    color: rgb(47, 35, 211);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+.panelHeader2,.panelHeader3, .panelHeader4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 13%;
+    font-family: 'Yellowtail';
+    font-style: normal;
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 65px;
+    margin-top: -20px;
+}
+
+.panelContent2,.panelContent3, .panelContent4{
+
+    width: 100%;
+    height: 70%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.panelSection1, .panelSection3 {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center; 
+}
+
+.panelSection2{
+    width: 5%;
+    height: 60%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.panelSection1Header, .panelSection3Header {
+    height: 15%;
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.panelSection3Header{
+    margin-left: -15%;
+}
+
+.panelSection1Body, .panelSection3Body{
+    
+    width: 80%;
+    height: 80%;
+    margin-top: 1%;
+    font-family: 'Handlee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.panelSection1Body{
+    margin-left: 20%;
+}
+
+.panelSection3Body{
+    margin-left: 9%; 
+}
+#Section1Body{
+    height: 50%;
+}
+
+#Section3Body{
+    height: 50%;
+}
+
+.badges{
+    height:12%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
