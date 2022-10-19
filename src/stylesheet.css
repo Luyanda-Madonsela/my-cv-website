@@ -2,7 +2,7 @@
 .nav{
     position: sticky ;
     width: 100%;
-    height: 56px;   
+    height: 40px;   
     background: linear-gradient(89.41deg, #ffffff 121.38%, rgba(125, 165, 201, 0.639325) 121.39%, rgba(217, 217, 217, 0) 124.68%);
     mix-blend-mode: normal;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -12,12 +12,34 @@
     margin-right: 50px;
 }
 
-.contact, .career, .certs{
+.homeIcon{
+    width: 20px;
+    height: 20px;   
+    margin-bottom: 7px;
+    margin-right: 15px;
+    margin-left: 7px;
+}
+
+.contact, .career, .certs, .projects{
     margin: 10px;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Handlee';
     font-style: normal;
 }
+
+.contact:hover{
+    text-decoration-line: underline;
+}
+.career:hover{
+    text-decoration-line: underline;
+}
+.certs:hover{
+    text-decoration-line: underline;
+}
+.projects:hover{
+    text-decoration-line: underline;
+}
+
 /*-----------------------------------------BODY LAYOUT--------------------------------------------*/
 .body{
     width: 100%;
@@ -68,12 +90,21 @@ flex-direction: row;
 .panel2{
     transform: rotate(1deg);
 }
+.panel2:hover{
+    transform: rotate(0.8deg);
+}
 
 .panel3{
     transform: rotate(-1deg);
 }
+.panel3:hover{
+    transform: rotate(-0.8deg);
+}
 .panel4{
     transform: rotate(1deg);
+}
+.panel4:hover{
+    transform: rotate(0.8deg);
 }
 
 .pin{
@@ -90,6 +121,7 @@ flex-direction: row;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
+    
 }
 
 .footerTopSection{
@@ -107,6 +139,13 @@ flex-direction: row;
 .footerGetInTouch, .footerDivideLine, .footerSupportMe{
 margin-top: 3%;
 padding:5px;
+}
+
+.footerGetInTouch:hover{
+    text-decoration-line: underline;
+}
+.footerSupportMe:hover{
+    text-decoration-line: underline;
 }
 
 .footerDivideLine{
@@ -144,7 +183,7 @@ padding:5px;
     background-size: contain;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     
 }
 
@@ -166,8 +205,14 @@ padding:5px;
     border-radius: 30px;
     margin-top:60px;
     transform: rotate(-2deg);
-
+    margin-left: 20%;
+    /*border-radius:6% 0% 16% 93% / 5% 33% 18% 0% ;*/
 }
+
+.aboutPanel:hover{
+    transform: rotate(-1.5deg);
+}
+
 .aboutPin{
     width: 100%;
     height: 10%;
@@ -180,11 +225,12 @@ padding:5px;
     width: 80%;
     height: 10%;
     margin-left: 50px;
-    margin-top: 10px;
+    /*margin-top: 4px;*/
     font-family: 'Yellowtail';
     font-style: normal;
     font-weight: 400;
-    font-size: 45px;
+    font-size: 48px;
+    padding: 5px;
     line-height: 65px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -211,7 +257,7 @@ padding:5px;
     margin-top: 10px;
     font-family: 'Handlee';
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /*------------------------PHOTO PANEL--------------------------*/
@@ -233,18 +279,23 @@ padding:5px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    margin-top:-25px;
+    margin-top:-15px;
     transform: rotate(-7.71deg);
-    
+    margin-left: -10%;
+}
+
+.photoPanel:hover{
+    transform: rotate(-7.51deg);
 }
 
 .photoPin{
     width: 100%;
     height: 8%;
-    margin-left: -8px;
+    margin-left: -4px;
     display: flex;
     flex-direction: row-reverse;
     margin-top: -30px;
+    margin-bottom: 4px;
     
 }
 
@@ -261,7 +312,7 @@ padding:5px;
     background-position:center;
     background-size: cover;
     border-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
 }
 
 .photo{
@@ -287,7 +338,7 @@ padding:5px;
     text-decoration-line: underline;
     color: rgb(47, 35, 211);
 }
-.clickHere2{
+.clickHere2,.clickHere3 {
     text-decoration-line: underline;
     color: rgb(47, 35, 211);
     display: flex;
@@ -297,6 +348,7 @@ padding:5px;
     font-family: 'Handlee';
     font-style: normal;
 }
+
 
 .panelHeader2,.panelHeader3, .panelHeader4{
     display: flex;

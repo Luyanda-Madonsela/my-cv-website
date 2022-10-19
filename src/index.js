@@ -7,15 +7,22 @@ import "./stylesheet.css"
 function Navigation() {
     return (
         <div className="nav">
+            <img className="homeIcon" src={require('./homeIcon.png')}/>
+            <p> | </p>
             <div className="contact">Contact Me</div>
+            <p> | </p>
             <div className="career">Career & Education</div>
+            <p> | </p>
+            <div className="projects">My Projects</div>
+            <p> | </p>
             <div className="certs">Tech Certificates</div>
+            
         </div>
     ) 
 }
 
 //-------------------------------------BODY SECTION-------------------------------------------
-function Body() {
+function HomePageBody() {
     return (
         <div className="body">
 
@@ -157,17 +164,18 @@ function Body() {
                                 </ul>
                             </div>
                             <p className="clickHere2">Click here to check out my Github...</p>
+                            <p className="clickHere3">Click here to check out my projects...</p>
                         </div>
                         <div className="panelSection2">
                             <img src={require('./middleLine.png')}/>
                         </div>
                         <div className="panelSection3">
                             <div className="panelSection3Header">
-                                Upcoming:
+                                Under Construction:
                             </div>
                             <div className="panelSection3Body">
                                 <ul>
-                                    <li>Past Paper Repository</li>
+                                    <li>Matric Past Paper Repository</li>
                                     <li>Online Contact Book</li>
                                     <li>To-do List Web Application</li>
                                     <li>Appointment Management Web Application</li>
@@ -283,7 +291,7 @@ function Page() {
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
             <link href="https://fonts.googleapis.com/css2?family=Habibi&family=Handlee&family=Headland+One&family=Yellowtail&display=swap" rel="stylesheet"></link>
             <Navigation/>
-            <Body/>
+            <HomePageBody/>
             <Footer/>
         </div>
     )  
