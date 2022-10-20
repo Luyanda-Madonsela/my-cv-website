@@ -1,3 +1,4 @@
+import {Link}from "react-router-dom"
 
 function HomePageBody() {
     return (
@@ -26,9 +27,9 @@ function HomePageBody() {
                                     Code is my life. I do freelance full-stack responsive web application development. I am particularly interested in the back end and cloud development. I designed this website myself to showcase some of my skills. Feel free to look around...
                                 </div>
                         </div>
-                        <div className="hireMeButton">
-                            HIRE  ME
-                        </div>
+
+                        <Link to="/contact" className="hireMeButton" >HIRE  ME</Link>
+
                     </div>
 
                     <div className="myPhoto">
@@ -105,7 +106,7 @@ function HomePageBody() {
                                     <li>PHP Foundations</li>
                                     <li>Python Foundations</li>
                                 </ul>
-                                <p className="clickHere1">Click here to check out my Certificates</p>
+                                <Link to="/certificates" className="clickHere1">Click here to check out my Certificates</Link>
                             </div>
                             <div className="badges">
                                 <div>
@@ -146,8 +147,8 @@ function HomePageBody() {
                                     <li>Loading...</li>
                                 </ul>
                             </div>
-                            <p className="clickHere2">Click here to check out my Github</p>
-                            <p className="clickHere3">Click here to check out my projects page</p>
+                            <a href="https://github.com/Luyanda-Madonsela" className="clickHere2">Click here to check out my Github</a>
+                            <Link to="/projects" className="clickHere3">Click here to check out my projects page</Link>
                         </div>
                         <div className="panelSection2">
                             <img src={require('./images/middleLine.png')}/>

@@ -15,7 +15,7 @@
 .homeIcon{
     width: 20px;
     height: 20px;   
-    margin-bottom: 7px;
+    margin-bottom: 2px;
     margin-right: 15px;
     margin-left: 7px;
 }
@@ -25,6 +25,8 @@
     font-size: 15px;
     font-family: 'Handlee';
     font-style: normal;
+    text-decoration-line: none;
+    color: rgb(0, 0, 0);
 }
 
 .contact:hover{
@@ -128,7 +130,6 @@ flex-direction: row;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
-    
 }
 
 .footerTopSection{
@@ -146,6 +147,8 @@ flex-direction: row;
 .footerGetInTouch, .footerDivideLine, .footerSupportMe{
 margin-top: 3%;
 padding:5px;
+text-decoration-line: none;
+color: rgb(0, 0, 0);
 }
 
 .footerGetInTouch:hover{
@@ -168,6 +171,9 @@ padding:5px;
 }
 .footerMiddleSection:hover{
     cursor: pointer;
+}
+.linkdinIcon{
+    margin-top: 2px;
 }
 
 .footerBottomSection{
@@ -196,7 +202,6 @@ padding:5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
 
 .aboutSection{
@@ -237,6 +242,8 @@ padding:5px;
     font-style: normal;
     font-size: 18px;
     padding-top: 13px;
+    text-decoration-line: none;
+    color: rgb(0, 0, 0);
 }
 
 .hireMeButton:hover{
@@ -260,7 +267,6 @@ padding:5px;
     width: 80%;
     height: 10%;
     margin-left: 50px;
-    /*margin-top: 4px;*/
     font-family: 'Yellowtail';
     font-style: normal;
     font-weight: 400;
@@ -347,7 +353,6 @@ padding:5px;
     background-position:center;
     background-size: cover;
     border-radius: 5px;
-    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
 }
 
 .photo{
@@ -371,9 +376,10 @@ padding:5px;
 
 .clickHere1{
     color: rgb(47, 35, 211);
+    text-decoration-line: none;
 }
 .clickHere3{
-    margin-top: -10px;
+    margin-top: 10px;
 }
 
 .clickHere2,.clickHere3 {
@@ -385,6 +391,7 @@ padding:5px;
     font-family: 'Handlee';
     font-style: normal;
     padding: 1px;
+    text-decoration-line: none;
 }
 
 .clickHere1:hover, .clickHere2:hover, .clickHere3:hover{
