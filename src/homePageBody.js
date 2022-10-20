@@ -102,7 +102,7 @@ function HomePageBody() {
                                     <li>PHP Foundations</li>
                                     <li>Python Foundations</li>
                                 </ul>
-                                <p className="clickHere1">Click here to check out my Certificates...</p>
+                                <p className="clickHere1">Click here to check out my Certificates</p>
                             </div>
                             <div className="badges">
                                 <div>
@@ -143,8 +143,8 @@ function HomePageBody() {
                                     <li>Loading...</li>
                                 </ul>
                             </div>
-                            <p className="clickHere2">Click here to check out my Github...</p>
-                            <p className="clickHere3">Click here to check out my projects...</p>
+                            <p className="clickHere2">Click here to check out my Github</p>
+                            <p className="clickHere3">Click here to check out my projects page</p>
                         </div>
                         <div className="panelSection2">
                             <img src={require('./images/middleLine.png')}/>

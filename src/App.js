@@ -13,7 +13,6 @@ function App() {
                     <HomePageBody/>
                     <Footer/>
                 </div> 
-    
     )
 }
 

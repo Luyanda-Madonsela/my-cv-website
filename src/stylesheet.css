@@ -29,15 +29,22 @@
 
 .contact:hover{
     text-decoration-line: underline;
+    cursor: pointer;
 }
 .career:hover{
     text-decoration-line: underline;
+    cursor: pointer;
 }
 .certs:hover{
     text-decoration-line: underline;
+    cursor: pointer;
 }
 .projects:hover{
     text-decoration-line: underline;
+    cursor: pointer;
+}
+.homeIcon:hover{
+    cursor: pointer;
 }
 
 /*-----------------------------------------BODY LAYOUT--------------------------------------------*/
@@ -143,9 +150,11 @@ padding:5px;
 
 .footerGetInTouch:hover{
     text-decoration-line: underline;
+    cursor: pointer;
 }
 .footerSupportMe:hover{
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 .footerDivideLine{
@@ -156,6 +165,9 @@ padding:5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.footerMiddleSection:hover{
+    cursor: pointer;
 }
 
 .footerBottomSection{
@@ -229,6 +241,7 @@ padding:5px;
 
 .hireMeButton:hover{
     box-shadow: none;
+    cursor: pointer;
 }
 
 .aboutPanel:hover{
@@ -357,12 +370,13 @@ padding:5px;
 }
 
 .clickHere1{
-    text-decoration-line: underline;
     color: rgb(47, 35, 211);
+}
+.clickHere3{
+    margin-top: -10px;
 }
 
 .clickHere2,.clickHere3 {
-    text-decoration-line: underline;
     color: rgb(47, 35, 211);
     display: flex;
     flex-direction: row;
@@ -370,6 +384,12 @@ padding:5px;
     margin-left: 15%;
     font-family: 'Handlee';
     font-style: normal;
+    padding: 1px;
+}
+
+.clickHere1:hover, .clickHere2:hover, .clickHere3:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
 }
 
 .panelHeader2,.panelHeader3, .panelHeader4{
