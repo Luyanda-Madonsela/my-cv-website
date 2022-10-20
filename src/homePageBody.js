@@ -2,6 +2,9 @@
 function HomePageBody() {
     return (
         <div className="body">
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+            <link href="https://fonts.googleapis.com/css2?family=Habibi&family=Handlee&family=Headland+One&family=Yellowtail&display=swap" rel="stylesheet"></link>
 
             <div className="pageSection1" id="Section1">
                 <div className="panel1">
@@ -54,7 +57,7 @@ function HomePageBody() {
                         <img src={require('./images/redPin.png')}/>
                     </div>
                     <div className="panelHeader2">
-                        My Technical Skills
+                        My Coding Skills
                     </div>
                     <div className="panelContent2">
                         <div className="panelSection1">
@@ -63,11 +66,11 @@ function HomePageBody() {
                             </div>
                             <div className="panelSection1Body">
                                 <ul>
-                                    <li>Basic UX/UI Design using Figma</li>
+                                    <li>UX/UI Design using Figma & CSS3</li>
                                     <p></p>
                                     <li>Responsive Web Design using React.js</li>
                                     <p></p>
-                                    <li>Python Django Framework</li>
+                                    <li>Back end design with PHP & Python Django:</li>
                                         <ul>
                                             <li>CRUD Operations with SQLi</li>
                                             <li>Login & Form Validation</li>
