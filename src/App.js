@@ -1,6 +1,7 @@
 import "./stylesheet.css"
 import Navigation from "./navigation.js"
 import HomePageBody from "./homePageBody.js"
+import CertificatesPage from "./Certificates.js"
 import Footer from  "./footer.js"
 import {BrowserRouter, Route, Routes}from "react-router-dom"
 
@@ -19,7 +20,7 @@ function App() {
                 <Route path="/certificates" element={
                     <div className="page">
                         <Navigation/>
-                        <h1>certificates</h1>
+                        <CertificatesPage/>
                         <Footer/>
                     </div>
                 }/>
@@ -40,13 +41,6 @@ function App() {
                     </div>
                 }/>
 
-                <Route path="/career" element={
-                    <div className="page">
-                        <Navigation/>
-                        <h1>career</h1>
-                        <Footer/>
-                    </div>
-                }/>
             </Routes>
         </BrowserRouter>
     )

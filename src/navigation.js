@@ -11,8 +11,6 @@ function Navigation() {
             <p> | </p>
             <Link to="/contact" className="contact">Contact Me</Link>
             <p> | </p>
-            <Link to="/career" className="career">Career & Education</Link>
-            <p> | </p>
             <Link to="/projects" className="projects">Projects</Link>
             <p> | </p>
             <Link to="/certificates" className="certs">Tech Certificates</Link>
