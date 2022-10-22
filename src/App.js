@@ -1,8 +1,11 @@
 import "./stylesheet.css"
 import Navigation from "./navigation.js"
 import HomePageBody from "./homePageBody.js"
-import CertificatesPage from "./Certificates.js"
+import CertificatesPage from "./certificates.js"
+import ContactPage from "./contact.js"
 import Footer from  "./footer.js"
+import SuccessPage from  "./success.js"
+import ProjectsPage from  "./projects.js"
 import {BrowserRouter, Route, Routes}from "react-router-dom"
 
 function App() {
@@ -28,7 +31,7 @@ function App() {
                 <Route path="/projects" element={
                     <div className="page">
                         <Navigation/>
-                        <h1>projects</h1>
+                        <ProjectsPage/>
                         <Footer/>
                     </div>
                 }/>
@@ -36,7 +39,15 @@ function App() {
                 <Route path="/contact" element={
                     <div className="page">
                         <Navigation/>
-                        <h1>contact</h1>
+                        <ContactPage/>
+                        <Footer/>
+                    </div>
+                }/>
+
+                <Route path="/success" element={
+                    <div className="page">
+                        <Navigation/>
+                        <SuccessPage/>
                         <Footer/>
                     </div>
                 }/>
