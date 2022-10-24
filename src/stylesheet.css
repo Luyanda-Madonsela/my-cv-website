@@ -1,6 +1,7 @@
 /*-----------------------------------------NAVIGATION--------------------------------------------*/
 .nav{
-    position: sticky ;
+    position: fixed ;
+    z-index: 3;
     width: 100%;
     height: 40px;   
     background: linear-gradient(89.41deg, #ffffff 121.38%, rgba(125, 165, 201, 0.639325) 121.39%, rgba(217, 217, 217, 0) 124.68%);
@@ -127,7 +128,7 @@ color: rgb(0, 0, 0);
     mix-blend-mode: normal;
     display: flex;
     flex-direction: column;
-    margin-top: 2px;  
+    margin-top: 42px;  
 }
 
 .page{
@@ -494,6 +495,13 @@ flex-direction: row;
     justify-content: center;
 }
 
+.downloadCVSection1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 85%;
+}
+
 /*-----------------------------------------CERTIFICATIONS PAGE--------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------*/
 
@@ -502,6 +510,7 @@ flex-direction: row;
     width: 100%;
     background: linear-gradient(180deg, #DBFFFF 64.57%, rgba(202, 211, 224, 0) 103.12%);
     mix-blend-mode: normal;
+    margin-top: 20px;  
 }
 
 .certs{
@@ -540,6 +549,7 @@ margin-left: 10%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;  
 }
 
 .contactPanel{
@@ -664,6 +674,7 @@ margin-left: 10%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;  
 }
 
 .projectsPanel{

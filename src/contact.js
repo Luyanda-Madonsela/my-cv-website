@@ -33,10 +33,9 @@ function ContactPage(){
                 </form>
             </div>
             <div className="downloadCVSection">
-            <a href="" className="clickHere5">Download my CV as PDF document</a>
+                <a href={"/Resume-Luyanda-Madonsela.pdf"} download className="clickHere5">Download my CV as PDF document</a>
             </div>
         
-
         </div>
     )
 

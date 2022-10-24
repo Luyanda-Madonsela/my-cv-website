@@ -24,7 +24,7 @@ function HomePageBody() {
                                     A bit about me...
                                 </div>
                                 <div className="aboutPara">
-                                    Code is my life. I do freelance full-stack responsive web application development. I am particularly interested in the back end and cloud development. I designed this website myself to showcase some of my skills. Feel free to look around...
+                                    Code is my life. I do full-stack responsive web application development. I am particularly interested in the back end and cloud development. I designed this website myself to showcase some of my skills. Feel free to look around...
                                 </div>
                         </div>
 
@@ -68,24 +68,24 @@ function HomePageBody() {
                             <div className="panelSection1Body">
                                 <ul>
                                     <li>UX/UI Design using Figma & CSS3</li>
-                                    <p></p>
+                            
                                     <li>Responsive Web Design using React.js</li>
-                                    <p></p>
+                                    
                                     <li>Back end design with PHP & Python Django:</li>
                                         <ul>
-                                            <li>CRUD Operations with SQLi</li>
                                             <li>Login & Form Validation</li>
+                                            <li>CRUD Operations with SQLi</li>
                                             <li>Payment Systems</li>
-                                            <li>MVC</li>
+                                            <li>OOP & Model-View-Controller (MVC)</li>
                                             <li>REST Framework</li>
                                         </ul>
-                                    <p></p>
-                                    <li>Cloud Development</li>
+                                    
+                                    <li>Cloud Development:</li>
                                         <ul>
                                             <li>Docker & Kubernetes</li>
                                             <li>AWS Cloud Development</li>
                                         </ul>
-                                    <p></p>
+                                
                                     <li>Github Repository & Website Deployment</li>
                                 </ul>
                             </div>
@@ -191,8 +191,8 @@ function HomePageBody() {
                             </div>
                             <div className="panelSection1Body">
                                 <ul>
+                                    <li>Unified Modelling Language (UML)</li>
                                     <li>Node.js & Express.js</li>
-                                    <p></p>
                                     <li>Java</li>
                                         <ul>
                                             <li>Spring Framework</li>
@@ -200,11 +200,8 @@ function HomePageBody() {
                                             <li>Software Design Patterns</li>
                                             <li>Automated Testing</li>
                                         </ul>
-                                    <p></p>
                                     <li>DevOps</li>
-                                    <p></p>
                                     <li>IoT</li>
-                                    <p></p>
                                     <li>Ethical Hacking</li>
                                 </ul>
                             </div>
@@ -229,6 +226,10 @@ function HomePageBody() {
                     </div>
                 </div>
             
+            </div>
+
+            <div className="downloadCVSection1">
+                <a href={"/Resume-Luyanda-Madonsela.pdf"} download className="clickHere5">Download my CV as PDF document</a>
             </div>
         
         </div>
