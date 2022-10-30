@@ -1,44 +1,147 @@
-import {Link}from "react-router-dom"
+import {useState} from "react"
 
-function ContactPage(){
+function ContactPage({submitForm}){
+
+    const[values, setValues] = useState({ fullName:"", email:"", subject:"", message:"",});
+    const [formErrors, setFormErrors] = useState({});
+
+
+    const handleFullNameInputChange = (Event) => {
+        setValues ({...values, fullName: Event.target.value});
+    }
+
+    const handleEmailInputChange = (Event) => {
+        setValues ({...values, email: Event.target.value});
+    }
+
+    const handleSubjectInputChange = (Event) => {
+        setValues ({...values, subject: Event.target.value});
+    }
+
+    const handleMessageInputChange = (Event) => {
+        setValues ({...values, message: Event.target.value});
+    }
+
+
+    const handleSubmit = (Event) => {
+        Event.preventDefault();
+        setFormErrors(validate(values));
+    };
+
+    const validate = (values) => {
+        const errors = {};
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+        if (!values.fullName) {
+            errors.fullName = "Username is required!";
+            submitForm(false);
+        } else {
+            submitForm(true);
+        }
+
+        if (!values.email) {
+            errors.email = "Email is required!";
+        } else if (!regex.test(values.email)) {
+            errors.email = "This is not a valid email format!";
+        }
+        if (!values.subject) {
+            errors.subject = "Subject is required!";
+        }
+
+        if (!values.message) {
+            errors.message = "Message is required!";
+        }
+
+        if (!values.fullName || !values.email || !values.subject || !values.message || !regex.test(values.email)) {
+            submitForm(false);
+        } else {
+            submitForm(true);
+        }
+        
+        return errors;
+    };
+
+
     return(
+
         <div className="contactPage">
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
             <link href="https://fonts.googleapis.com/css2?family=Habibi&family=Handlee&family=Headland+One&family=Yellowtail&display=swap" rel="stylesheet"></link>
+        
+
+            <div className="contactPanel"> 
             
-            <div className="contactPanel">
                 <div className="contactHeaderSection">
                     <div className="contactHeader">Leave A Message</div>
                 </div>
                 <div>_______________________________</div>
+                
+                <form className="form" onSubmit={handleSubmit}>
 
-                <form class="form" action="">
                     <div className="contactFillInSection">
                         <div className="fullNameLabel">Full Name:<span className="star">*</span></div>
-                        <input type="text" className="inputName"></input>
-                        <p className="fullNameErrorDisplay"></p>
+                        <input type="text" className="inputName" value={values.fullName} onChange={handleFullNameInputChange} ></input>
+                        <p className="errorDisplay">{formErrors.fullName}</p>
+
                         <div className="emailLabel">Email:<span className="star">*</span></div>
-                        <input type="email" class="inputEmail"></input>
-                        <p className="emailErrorDisplay"></p>
+                        <input type="email" class="inputEmail" value={values.email} onChange={handleEmailInputChange} ></input>
+                        <p className="errorDisplay">{formErrors.email}</p>
+
                         <div className="subjectLabel">Subject:<span className="star">*</span></div>
-                        <input type="text" class="inputSubject"></input>
-                        <p id="subjectErrorDisplay"></p>
+                        <input type="text" class="inputSubject" value={values.subject} onChange={handleSubjectInputChange}></input>
+                        <p className="errorDisplay">{formErrors.subject}</p>
+
                         <div className="messageLabel">Message:<span className="star">*</span></div>
-                        <textarea className ="inputMessage" name="inputMessage" cols="42" rows="10"></textarea>
+                        <textarea className ="inputMessage" name="inputMessage" cols="42" rows="10" value={values.message} onChange={handleMessageInputChange}></textarea>
+                        <p className="errorDisplay">{formErrors.message}</p>
+
                     </div>
+
                     <div className="submitSection">
                         <input className="submitButton" type="submit" value="Submit"></input>
                     </div>
+
                 </form>
+                
             </div>
+
             <div className="downloadCVSection">
                 <a href={"/Resume-Luyanda-Madonsela.pdf"} download className="clickHere5">Download my CV as PDF document</a>
             </div>
         
         </div>
+    
     )
+    
 
 }
 
-export default ContactPage;
+function SuccessPage(){
+    return(
+        <div className="successPage">
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+            <link href="https://fonts.googleapis.com/css2?family=Habibi&family=Handlee&family=Headland+One&family=Yellowtail&display=swap" rel="stylesheet"></link>        
+
+            <div className="successPanel">
+                <h1 className="successMessage">Message Submitted Successfully!</h1>
+            </div>
+
+        </div>
+    )
+}
+
+
+function Contact(){
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    
+    return(
+        <div className="Page">
+            
+            {!isSubmitted ? <ContactPage submitForm={setIsSubmitted}/> : <SuccessPage/> }
+            
+        </div>
+    )
+
+}
+export default Contact;

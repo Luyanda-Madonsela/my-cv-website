@@ -2,9 +2,8 @@ import "./stylesheet.css"
 import Navigation from "./navigation.js"
 import HomePageBody from "./homePageBody.js"
 import CertificatesPage from "./certificates.js"
-import ContactPage from "./contact.js"
+import Contact from "./contact.js"
 import Footer from  "./footer.js"
-import SuccessPage from  "./success.js"
 import ProjectsPage from  "./projects.js"
 import {BrowserRouter, Route, Routes}from "react-router-dom"
 
@@ -39,15 +38,7 @@ function App() {
                 <Route path="/contact" element={
                     <div className="page">
                         <Navigation/>
-                        <ContactPage/>
-                        <Footer/>
-                    </div>
-                }/>
-
-                <Route path="/success" element={
-                    <div className="page">
-                        <Navigation/>
-                        <SuccessPage/>
+                        <Contact/>
                         <Footer/>
                     </div>
                 }/>
