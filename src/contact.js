@@ -79,22 +79,18 @@ function ContactPage({submitForm}){
                 <form className="form" onSubmit={handleSubmit}>
 
                     <div className="contactFillInSection">
-                        <div className="fullNameLabel">Full Name:<span className="star">*</span></div>
+                        <div className="fullNameLabel">Full Name:<span className="star">* </span> <span className="errorDisplay">{formErrors.fullName}</span></div>
                         <input type="text" className="inputName" value={values.fullName} onChange={handleFullNameInputChange} ></input>
-                        <p className="errorDisplay">{formErrors.fullName}</p>
-
-                        <div className="emailLabel">Email:<span className="star">*</span></div>
+                        <p></p>
+                        <div className="emailLabel">Email:<span className="star">* </span><span className="errorDisplay">{formErrors.email}</span></div>
                         <input type="email" class="inputEmail" value={values.email} onChange={handleEmailInputChange} ></input>
-                        <p className="errorDisplay">{formErrors.email}</p>
-
-                        <div className="subjectLabel">Subject:<span className="star">*</span></div>
+                        <p></p>
+                        <div className="subjectLabel">Subject:<span className="star">* </span><span className="errorDisplay">{formErrors.subject}</span></div>
                         <input type="text" class="inputSubject" value={values.subject} onChange={handleSubjectInputChange}></input>
-                        <p className="errorDisplay">{formErrors.subject}</p>
-
-                        <div className="messageLabel">Message:<span className="star">*</span></div>
+                        <p></p>
+                        <div className="messageLabel">Message:<span className="star">* </span><span className="errorDisplay">{formErrors.message}</span></div>
                         <textarea className ="inputMessage" name="inputMessage" cols="42" rows="10" value={values.message} onChange={handleMessageInputChange}></textarea>
-                        <p className="errorDisplay">{formErrors.message}</p>
-
+                        <p></p>
                     </div>
 
                     <div className="submitSection">
@@ -125,6 +121,7 @@ function SuccessPage(){
 
             <div className="successPanel">
                 <h1 className="successMessage">Message Submitted Successfully!</h1>
+                <h2 className="successMessage2">I will respond soon...</h2>
             </div>
 
         </div>

@@ -2,7 +2,7 @@
 .nav{
     position: fixed;
     z-index: 3;
-    width: 100%;
+    width: 1350px;
     height: 40px;   
     background: linear-gradient(89.41deg, #ffffff 121.38%, rgba(125, 165, 201, 0.639325) 121.39%, rgba(217, 217, 217, 0) 124.68%);
     mix-blend-mode: normal;
@@ -53,7 +53,7 @@
 /*-----------------------------------------FOOTER--------------------------------------------*/
 
 .footer{
-    width: 100%;
+    width: 1350px;
     height: 204px;
     background: linear-gradient(89.5deg, #A8F4AB 22.08%, rgba(125, 165, 201, 0.639325) 101.6%, rgba(217, 217, 217, 0) 104.72%);
     mix-blend-mode: normal;
@@ -122,13 +122,16 @@ color: rgb(0, 0, 0);
 
 /*-----------------------------------------BODY LAYOUT--------------------------------------------*/
 .body{
-    width: 100%;
+    width: 1350px;
     height: 2900px;
     background: linear-gradient(180deg, #DBFFFF 61.46%, rgba(202, 211, 224, 0) 100%);
     mix-blend-mode: normal;
     display: flex;
     flex-direction: column;
+    align-content: center;
     margin-top: 42px;  
+    margin-left: 0%;
+    margin-right: 10px;
 }
 
 .page{
@@ -507,7 +510,7 @@ flex-direction: row;
 
 .certsPage{
     height: 4200px;
-    width: 100%;
+    width: 1350px;
     background: linear-gradient(180deg, #DBFFFF 64.57%, rgba(202, 211, 224, 0) 103.12%);
     mix-blend-mode: normal;
     margin-top: 20px;  
@@ -518,12 +521,52 @@ flex-direction: row;
     flex-direction: column;
     justify-items: space-evenly;
 }
-.cert{
+.cert1, .cert2, .cert3, .cert4, .cert5 {
 width: 80%;
-height: 25%;
 margin: 2%;
 margin-left: 10%;
 }
+
+.cert1{
+    background-image: url(./images/SW_html5_foundations.png);
+    background-repeat: no-repeat ;
+    background-position:center;
+    background-size: cover;
+    height: 750px;
+}
+
+.cert2{
+    background-image: url(./images/SW_css3_foundations.png);
+    background-repeat: no-repeat ;
+    background-position:center;
+    background-size: cover;
+    height: 750px;
+}
+
+.cert3{
+    background-image: url(./images/SW_javascript_foundations.png);
+    background-repeat: no-repeat ;
+    background-position:center;
+    background-size: cover;
+    height: 750px;
+}
+
+.cert4{
+    background-image: url(./images/SW_beginners_python_3.png);
+    background-repeat: no-repeat ;
+    background-position:center;
+    background-size: cover;
+    height: 750px;
+}
+
+.cert5{
+    background-image: url(./images/SW_php_7_foundations.png);
+    background-repeat: no-repeat ;
+    background-position:center;
+    background-size: cover;
+    height: 750px;
+}
+
 
 .verifyLink{
     display: flex;
@@ -541,8 +584,8 @@ margin-left: 10%;
 /*--------------------------------------------------------------------------------------------------------*/
 
 .contactPage{
-    height: 850px;
-    width: 100%;
+    height: 750px;
+    width: 1350px;
     background: linear-gradient(180deg, #DBFFFF 64.57%, rgba(202, 211, 224, 0) 103.12%);
     mix-blend-mode: normal;
     display: flex;
@@ -554,7 +597,7 @@ margin-left: 10%;
 
 .successPage{
     height: 600px;
-    width: 100%;
+    width: 1350px;
     background: linear-gradient(180deg, #DBFFFF 64.57%, rgba(202, 211, 224, 0) 103.12%);
     mix-blend-mode: normal;
     display: flex;
@@ -566,7 +609,7 @@ margin-left: 10%;
 
 .contactPanel{
     width: 28%;
-    height: 77%;
+    height: 74%;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -574,12 +617,12 @@ margin-left: 10%;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    margin-top:-50px;
+    margin-top:-90px;
 }
 
 .successPanel{
     width: 38%;
-    height: 77%;
+    height: 57%;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -595,7 +638,10 @@ margin-left: 10%;
 }
 
 .successMessage{
-    margin-top: 40%;
+    margin-top: 27%;
+}
+.successMessage2{
+    margin-top: 0%;
 }
 
 
@@ -649,8 +695,8 @@ margin-left: 10%;
 }
 
 .submitButton{
-    width: 30%;
-    height: 5%;
+    width: 40%;
+    height: 10%;
     margin-top: 10px;
     border-radius: 5px;
     font-family: 'Handlee';
@@ -701,7 +747,7 @@ margin-left: 10%;
 
 .projectsPage{
     height: 700px;
-    width: 100%;
+    width: 1350px;
     background: linear-gradient(180deg, #DBFFFF 64.57%, rgba(202, 211, 224, 0) 103.12%);
     mix-blend-mode: normal;
     display: flex;

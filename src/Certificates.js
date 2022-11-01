@@ -10,11 +10,11 @@ function CertificatesPage(){
                 <div className="verifyLink">
                     <a className="clickHere4" href="https://school.studioweb.com/profile/luyandasmadonsela_7880_solo">Click here to verify online</a>
                 </div>
-                <img className="cert" src={require('./images/SW_html5_foundations.png')}/>
-                <img className="cert" src={require('./images/SW_css3_foundations.png')}/>
-                <img className="cert" src={require('./images/SW_javascript_foundations.png')}/>
-                <img className="cert" src={require('./images/SW_beginners_python_3.png')}/>
-                <img className="cert" src={require('./images/SW_php_7_foundations.png')}/>
+                <img className="cert1"/>
+                <img className="cert2"/>
+                <img className="cert3"/>
+                <img className="cert4"/>
+                <img className="cert5"/>
             </div>
 
         </div>
