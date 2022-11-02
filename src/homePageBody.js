@@ -67,14 +67,14 @@ function HomePageBody() {
                             </div>
                             <div className="panelSection1Body">
                                 <ul>
-                                    <li>UX/UI Design using Figma & CSS3</li>
+                                    <li>UX/UI Design using <span className="bold">Figma & CSS3</span></li>
                             
-                                    <li>Responsive Web Design using React.js</li>
+                                    <li>Responsive Web Design using <span className="bold">React.js</span></li>
                                     
-                                    <li>Back end design with PHP & Python Django:</li>
+                                    <li>Back end design with <span className="bold">PHP7 & Python Django</span>:</li>
                                         <ul>
                                             <li>Login & Form Validation</li>
-                                            <li>CRUD Operations with SQLi</li>
+                                            <li>CRUD Operations with <span className="bold">mySQL</span></li>
                                             <li>Payment Systems</li>
                                             <li>OOP & Model-View-Controller (MVC)</li>
                                             <li>REST Framework</li>
@@ -82,11 +82,11 @@ function HomePageBody() {
                                     
                                     <li>Cloud Development:</li>
                                         <ul>
-                                            <li>Docker & Kubernetes</li>
+                                            <li><span className="bold">Docker</span> & Kubernetes</li>
                                             <li>AWS Cloud Development</li>
                                         </ul>
                                 
-                                    <li>Github Repository & Website Deployment</li>
+                                    <li><span className="bold">Github</span> Repository & Website Deployment</li>
                                 </ul>
                             </div>
                         </div>
@@ -144,7 +144,6 @@ function HomePageBody() {
                                 <ul>
                                     <li>This Website</li>
                                     <p>~ I used React.js on the front end, Python Django for the back end operations.</p>
-                                    <li>Loading...</li>
                                 </ul>
                             </div>
                             <a href="https://github.com/Luyanda-Madonsela" className="clickHere2">Click here to check out my Github</a>

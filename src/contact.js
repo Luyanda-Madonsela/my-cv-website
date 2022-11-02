@@ -32,7 +32,7 @@ function ContactPage({submitForm}){
         const errors = {};
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
         if (!values.fullName) {
-            errors.fullName = "Username is required!";
+            errors.fullName = "Name is required!";
             submitForm(false);
         } else {
             submitForm(true);
