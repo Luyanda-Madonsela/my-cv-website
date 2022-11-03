@@ -1,4 +1,5 @@
-import {useState} from "react"
+import React, {useState, useRef} from "react"
+import emailjs from '@emailjs/browser';
 
 function ContactPage({submitForm}){
 
@@ -25,10 +26,11 @@ function ContactPage({submitForm}){
 
     const handleSubmit = (Event) => {
         Event.preventDefault();
-        setFormErrors(validate(values));
+        setFormErrors(validate(values, Event)); 
     };
 
-    const validate = (values) => {
+    const validate = (values, Event) => {
+        Event.preventDefault();
         const errors = {};
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
         if (!values.fullName) {
@@ -55,11 +57,26 @@ function ContactPage({submitForm}){
             submitForm(false);
         } else {
             submitForm(true);
+            sendEmail(Event);
         }
         
         return errors;
     };
 
+    const form = useRef();
+
+    const sendEmail = (Event) => {
+        Event.preventDefault();
+
+        emailjs.sendForm('service_lt3bsaa', 'template_k7s02qs', form.current, 'WG2WZ263ImdohwGct')
+        .then((result) => {
+            console.log(result.text);
+            console.log("SUCCESSFUL")
+        }, (error) => {
+            console.log(error.text);
+            console.log("ERROR")
+        });
+    };
 
     return(
 
@@ -76,20 +93,20 @@ function ContactPage({submitForm}){
                 </div>
                 <div>_______________________________</div>
                 
-                <form className="form" onSubmit={handleSubmit}>
+                <form className="form" onSubmit={handleSubmit} ref={form}>
 
                     <div className="contactFillInSection">
                         <div className="fullNameLabel">Full Name:<span className="star">* </span> <span className="errorDisplay">{formErrors.fullName}</span></div>
-                        <input type="text" className="inputName" value={values.fullName} onChange={handleFullNameInputChange} ></input>
+                        <input type="text" className="inputName" name="user_name" value={values.fullName} onChange={handleFullNameInputChange} ></input>
                         <p></p>
                         <div className="emailLabel">Email:<span className="star">* </span><span className="errorDisplay">{formErrors.email}</span></div>
-                        <input type="email" class="inputEmail" value={values.email} onChange={handleEmailInputChange} ></input>
+                        <input type="email" class="inputEmail" name="user_email" value={values.email} onChange={handleEmailInputChange} ></input>
                         <p></p>
                         <div className="subjectLabel">Subject:<span className="star">* </span><span className="errorDisplay">{formErrors.subject}</span></div>
-                        <input type="text" class="inputSubject" value={values.subject} onChange={handleSubjectInputChange}></input>
+                        <input type="text" class="inputSubject" name="subject" value={values.subject} onChange={handleSubjectInputChange}></input>
                         <p></p>
                         <div className="messageLabel">Message:<span className="star">* </span><span className="errorDisplay">{formErrors.message}</span></div>
-                        <textarea className ="inputMessage" name="inputMessage" cols="42" rows="10" value={values.message} onChange={handleMessageInputChange}></textarea>
+                        <textarea className ="inputMessage" name="message" cols="42" rows="10" value={values.message} onChange={handleMessageInputChange}></textarea>
                         <p></p>
                     </div>
 
