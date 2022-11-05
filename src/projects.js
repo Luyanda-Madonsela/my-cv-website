@@ -8,9 +8,20 @@ function ProjectsPage(){
             <link href="https://fonts.googleapis.com/css2?family=Habibi&family=Handlee&family=Headland+One&family=Yellowtail&display=swap" rel="stylesheet"></link>
             
             <div className="projectsPanel">
-                <h1 className="sorry">Sorry, i'm still working on this page.</h1>
-                <img className="" src={require('./images/underConstruction.png')}/>
-                <Link to="/contact" className="clickHere6">Click here to get notified when its up and running</Link>
+                
+                <div className="Pin2">
+                        <img src={require('./images/redPin.png')}/>
+                </div>
+
+                <div className="headerSection">
+                    <div className="welcomeHeader">Welcome To My Projects</div>
+                    <div className="welcomeHeader2">Just some small formalities:</div>
+                </div>
+                <div className="ButtonsSection">
+                    <Link to="/projects/login" className="clickHere6">Login</Link>
+                    <Link to="/projects/register" className="clickHere6">Register</Link>
+                    <Link to="/projects/myprojects" id="guestButton" className="clickHere6">Continue as Guest</Link>
+                </div>
             </div>
         </div>
     )

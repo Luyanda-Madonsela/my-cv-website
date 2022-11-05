@@ -24,7 +24,7 @@ function HomePageBody() {
                                     A bit about me...
                                 </div>
                                 <div className="aboutPara">
-                                    Code is my life. I do full-stack responsive web application development. I am particularly interested in the back end and cloud development. I designed this website myself to showcase some of my skills. Feel free to look around...
+                                    Code is my life. I love full-stack responsive web application development. I am particularly interested in the back end and cloud development. I designed this website myself to showcase some of my skills. Feel free to look around...
                                 </div>
                         </div>
 
@@ -71,21 +71,12 @@ function HomePageBody() {
                             
                                     <li>Responsive Web Design using <span className="bold">React.js</span></li>
                                     
-                                    <li>Back end design with <span className="bold">PHP7 & Python Django</span>:</li>
+                                    <li>Back end design with <span className="bold">PHP & Python Django</span>:</li>
                                         <ul>
                                             <li>Login & Form Validation</li>
                                             <li>CRUD Operations with <span className="bold">mySQL</span></li>
-                                            <li>Payment Systems</li>
-                                            <li>OOP & Model-View-Controller (MVC)</li>
-                                            <li>REST Framework</li>
                                         </ul>
                                     
-                                    <li>Cloud Development:</li>
-                                        <ul>
-                                            <li><span className="bold">Docker</span> & Kubernetes</li>
-                                            <li>AWS Cloud Development</li>
-                                        </ul>
-                                
                                     <li><span className="bold">Github</span> Repository & Website Deployment</li>
                                 </ul>
                             </div>
@@ -143,7 +134,7 @@ function HomePageBody() {
                             <div className="panelSection1Body" id="Section1Body">
                                 <ul>
                                     <li>This Website</li>
-                                    <p>~ I used React.js on the front end, Python Django for the back end operations.</p>
+                                    <p>~ I used React.js on the front end, Python Django, mySQL & EmailJS for the back end operations.</p>
                                 </ul>
                             </div>
                             <a href="https://github.com/Luyanda-Madonsela" className="clickHere2">Click here to check out my Github</a>
@@ -190,6 +181,14 @@ function HomePageBody() {
                             </div>
                             <div className="panelSection1Body">
                                 <ul>
+                                    <li>Payment Systems</li>
+                                    <li>Model-View-Controller (MVC)</li>
+                                    <li>REST Framework</li>
+                                    <li>Cloud Development:</li>
+                                    <ul>
+                                        <li>Docker & Kubernetes</li>
+                                        <li>AWS Cloud Development</li>
+                                    </ul>
                                     <li>Unified Modelling Language (UML)</li>
                                     <li>Node.js & Express.js</li>
                                     <li>Java</li>
@@ -199,9 +198,6 @@ function HomePageBody() {
                                             <li>Software Design Patterns</li>
                                             <li>Automated Testing</li>
                                         </ul>
-                                    <li>DevOps</li>
-                                    <li>IoT</li>
-                                    <li>Ethical Hacking</li>
                                 </ul>
                             </div>
 

@@ -744,7 +744,7 @@ margin-left: 10%;
     
 }
 
-/*------------------------------------------------PROJECTS PAGE--------------------------------------------*/
+/*------------------------------------------------PROJECTS WELCOME PAGE--------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
 
 .projectsPage{
@@ -760,8 +760,100 @@ margin-left: 10%;
 }
 
 .projectsPanel{
-    width: 70%;
-    height: 77%;
+    width: 30%;
+    height: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-top:-50px;
+}
+
+.headerSection{
+    margin-top: -5px;
+}
+
+.welcomeHeader{
+    font-family: 'Yellowtail';
+    font-style: normal;
+    width:100%;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 61px;
+    text-align: center;
+}
+.welcomeHeader2{
+    font-family: 'Habibi';
+    font-style: normal;
+    width:100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 61px;
+    text-align: center;
+}
+
+
+.ButtonsSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: -60%;
+}
+
+.clickHere6{
+    width: 50%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #e0afaf;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top:40px;
+    margin-left:60%;
+    font-family: 'Habibi';
+    font-style: normal;
+    font-size: 18px;
+    padding-top: 10px;
+    text-decoration-line: none;
+    color: rgb(0, 0, 0);
+}
+#guestButton{
+    font-size: 22px;
+    padding-top: 8px;
+    width: 60%;
+    height: 40px;
+}
+
+.clickHere6:hover{
+    box-shadow: none;
+    cursor: pointer;
+}
+
+/*------------------------------------------------LOGIN PAGE--------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+.loginPage{
+    height: 750px;
+    width: 1350px;
+    background: linear-gradient(180deg, #DBFFFF 64.57%, rgba(202, 211, 224, 0) 103.12%);
+    mix-blend-mode: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;  
+}
+
+
+.loginPanel{
+    width: 27%;
+    height: 46%;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -769,26 +861,326 @@ margin-left: 10%;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    margin-top:-50px;
+    margin-top:-200px;
+    /*transform: rotate(-1.5deg);*/
 }
-.sorry{
-    font-family: 'Habibi';
+
+.loginHeaderSection{
+    margin-top: -5px;
+}
+
+.loginHeader{
+    font-family: 'Yellowtail';
     font-style: normal;
-    padding: 1px;
-    text-decoration-line: none;
+    width:100%;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 61px;
+    text-align: center;
 }
-.clickHere6{
-    color: rgb(47, 35, 211);
+
+.loginFillInSection{
+    width: 280px;
+    margin-top: 30px;
+    margin-left: 2px;
+}
+
+.submitSection{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*margin-left: 15%;*/
+    align-items: center;
+}
+
+.passwordLabel, .emailLabel{
     font-family: 'Handlee';
     font-style: normal;
-    padding: 1px;
-    text-decoration-line: none;
+    font-weight: 400;
 }
-.clickHere6:hover{
-    text-decoration-line: underline;
+
+.star, .errorDisplay{
+    color: red;
+    width: 100%;
+}
+
+.inputPassword,.inputEmail{
+    background: #D9D9D9;
+    border-radius: 5px;
+    border: none;
+    width:100%;
+    height:20px;
+}
+
+.LoginSubmitButton{
+    width: 50%;
+    height: 10%;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Handlee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    background: linear-gradient(89.5deg, #A8F4AB 22.08%, rgba(125, 165, 201, 0.639325) 101.6%, rgba(217, 217, 217, 0) 104.72%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.submitButton:hover{
+    box-shadow:none;
     cursor: pointer;
 }
+
+/*------------------------------------------------REGISTER PAGE--------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+.registerPage{
+    height: 750px;
+    width: 1350px;
+    background: linear-gradient(180deg, #DBFFFF 64.57%, rgba(202, 211, 224, 0) 103.12%);
+    mix-blend-mode: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;  
+}
+
+
+.registerPanel{
+    width: 27%;
+    height: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top:-200px;
+    /*transform: rotate(-1.5deg);*/
+}
+
+.registerHeaderSection{
+    margin-top: -5px;
+
+}
+
+.registerHeader{
+    font-family: 'Yellowtail';
+    font-style: normal;
+    width:100%;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 61px;
+    text-align: center;
+}
+
+.registerFillInSection{
+    width: 280px;
+    margin-top: 30px;
+    margin-left: 2px;
+
+}
+
+.submitSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.passwordLabel, .emailLabel{
+    font-family: 'Handlee';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.star, .errorDisplay{
+    color: red;
+    width: 100%;
+}
+
+.inputPassword,.inputEmail{
+    background: #D9D9D9;
+    border-radius: 5px;
+    border: none;
+    width:100%;
+    height:20px;
+}
+
+.LoginSubmitButton{
+    width: 50%;
+    height: 10%;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Handlee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    background: linear-gradient(89.5deg, #A8F4AB 22.08%, rgba(125, 165, 201, 0.639325) 101.6%, rgba(217, 217, 217, 0) 104.72%);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.submitButton:hover{
+    box-shadow:none;
+    cursor: pointer;
+}
+
+/*------------------------------------------------PROJECTS WELCOME PAGE--------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+
+.myProjectsPage{
+    height: 700px;
+    width: 1350px;
+    background: linear-gradient(180deg, #DBFFFF 64.57%, rgba(202, 211, 224, 0) 103.12%);
+    mix-blend-mode: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;  
+}
+
+.myProjectsPanel{
+    width: 60%;
+    height: 77%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-top:-50px;
+}
+
+.myProjectsHeaderSection{
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.locationPin{
+    width: 37px;
+    height: 60px;
+}
+
+.myProjectsHeader1{
+    font-family: 'Yellowtail';
+    font-style: normal;
+    width:100%;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 61px;
+    text-align: center;
+}
+.myProjectsHeader2{
+    font-family: 'Habibi';
+    font-style: normal;
+    width:100%;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 61px;
+    text-align: center;
+    margin-top: -25px;
+}
+
+.gridSection{
+    width: 90%;
+    height: 90%;
+
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    grid-column-gap: 4%;
+    grid-row-gap: 2%;
+    justify-items: center;
+    align-content: center;
+
+    grid-template-areas:
+    'proj proj proj'
+    'proj proj proj'
+    'proj proj proj'
+    ;
+}
+
+
+.proj{
+    width: 94%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: #e0afaf;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    text-decoration-line: none;
+    color: rgb(0, 0, 0);
+}
+
+.proj:hover{
+    box-shadow:none;
+    cursor: pointer;
+}
+
+
+/*------------------------------------------------UNDER CONSTRUCTION PAGE--------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+.constructionPage{
+    height: 750px;
+    width: 1350px;
+    background: linear-gradient(180deg, #DBFFFF 64.57%, rgba(202, 211, 224, 0) 103.12%);
+    mix-blend-mode: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;  
+}
+
+
+.constructionPanel{
+    width: 47%;
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top:-200px;
+    /*transform: rotate(-1.5deg);*/
+}
+
+.constructionHeaderSection{
+    margin-top: -5px;
+
+}
+
+.constructionHeader{
+    font-family: 'Habibi';
+    font-style: normal;
+    width:100%;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 61px;
+    text-align: center;
+}
+
