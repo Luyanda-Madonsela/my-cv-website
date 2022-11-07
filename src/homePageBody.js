@@ -211,7 +211,7 @@ function HomePageBody() {
                             </div>
                             <div className="panelSection3Body">
                                 <ul>
-                                    <li>AWS Certified Cloud Deverloper (Associate)</li>
+                                    <li>AWS Certified Cloud Developer (Associate)</li>
                                     <p></p>
                                     <li>CompTIA Security +</li>
                                 </ul>
